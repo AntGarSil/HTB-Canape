@@ -2,7 +2,7 @@ Write up for HackTheBox Canape challenge
 ----
 
 1) Can git clone from the web server
-2) Get source code.  Can see its vulnerable to python pickle deserialization
+2) Get source code.  Can see its vulnerable to RCE via python pickle deserialization
 3) RCE is in exploit.py
 4) Backup 'passwords' couchdb database using https://github.com/danielebailo/couchdb-dump.  Couchdb databases can be enumerated by going to http://localhost:5984/_all_dbs
 5) Credentials in plaintext in the DB  - ssh -p 65535 homer@10.10.10.70
